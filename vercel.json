@@ -1,5 +1,7 @@
 {
-  "framework": "static",
-  "outputDirectory": ".",
-  "buildCommand": null
+  "buildCommand": null,
+  "devCommand": null,
+  "installCommand": null,
+  "framework": null,
+  "outputDirectory": "."
 } 
