@@ -1,5 +1,8 @@
 {
   "version": 2,
+  "buildCommand": false,
+  "outputDirectory": ".",
+  "public": true,
   "builds": [
     {
       "src": "**",
@@ -7,25 +10,7 @@
     }
   ],
   "routes": [
-    {
-      "src": "/styles/(.*)",
-      "dest": "/styles/$1"
-    },
-    {
-      "src": "/scripts/(.*)",
-      "dest": "/scripts/$1"
-    },
-    {
-      "src": "/lib/(.*)",
-      "dest": "/lib/$1"
-    },
-    {
-      "src": "/(.*)\\.(?:js|css|json|txt|html|ico|png|jpg|jpeg|gif|svg|webp)",
-      "dest": "/$1.$2"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 } 
